@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">Score: <span class="score">0</span> </div>
+        <audio class="audio1" loop="true" controls="mute">
+            <source src="./gametheme.mp3" />     
+        </audio>
+        <div class="missedboard">Missed: <span class="missed">0</span> </div>
+        <div class="introbox"><h1> Word Clouds </h1>
+             <h2>How to Play?</h2>
+             <ul>
+                 <li>You have to type the words correctly before the clouds leaves.</li>
+                 <li>If you type it you get 1 point, if you don't its missed. </li>
+                 <li> If you miss more than 5 clouds your game is over.</li>
+             </ul>
+                <br />
+            
+              <h2> Your Name: </h2>
+             <input class="username" type="text" />
+             <div class="slidecontainer">
+                Typing God <input type="range" min="30" max="100" value="65" class="slider"> Typing Noob
+                  </div>
+                <div class="play">Start Game</div>
+                </div>
+        <div class="clouds"><span class="wordcloud">warmup</span></div>
+        <div class="inputbox">
+            <input type="text" class="wordinput" autofocus />
+        </div>
+       
+    </div>
+
+    <div class="popbox">
+        <input type="button" class="closebtn" value="[X]"/>
+        <br> <h3> Your Score !</h3>
+        <br>
+         Name: <div class="usrdisplay"></div> 
+         Score: <div class="scrdisplay"></div> 
+         Level: <div class="lvldisplay"></div> 
+
+        <br> <h3> Current High-Score ! </h3> 
+        <br> 
+        Name: <div class="husrdisplay"></div> 
+        Score: <div class="hscrdisplay"></div> 
+        Level: <div class="hlvldisplay"></div> 
+
+    </div>
+    
+  
+    <script src="words.js"></script>
+    <script src="type.js"></script>
+</body>
+</html>
