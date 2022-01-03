@@ -35,7 +35,7 @@ slider.oninput = function() {
     level = this.value / 10;
   }
 
-  closebtn.onclick = function() {
+closebtn.onclick = function() {
     resetgame();
   }
 
