@@ -115,29 +115,28 @@ text-align: center;
 
 }
 .popbox{
+    font-size: 22px;
     height: 400px;
     width: 400px;
     position: absolute;
-    background-color: #a4e9bb;
+    background: linear-gradient(#f4e688, #7a16bd);
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid;
-    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #02120388;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: center;
-    padding: 10px;
+    padding: 40px;
     display: none;
 }
 .closebtn{
+    border: none;
     height: 50px;
-    border: solid;
-    border-radius: 10px;
     width: 50px;
     color: #fff;
     background-color: red;
-    font-weight: 900;
+    font-weight: 500;
+    font-size: 22px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -241,4 +240,16 @@ audio {
     to{
         right: 100%;
     }
+}
+.usrdisplay, .scrdisplay, .lvldisplay, .husrdisplay, .hscrdisplay, .hlvldisplay {
+display: inline;
+}
+
+.lvl-btn{
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  background: #04AA6D;
 }
